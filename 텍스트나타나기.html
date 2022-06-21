@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트나타나기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: inherit;
+            font-weight: inherit;
+            box-sizing: border-box;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        body {
+            color: #333;
+            line-height: 1;
+        }
+
+        section {
+            position: relative;
+            width: 700px;
+            height: 450px;
+            border: 1px solid #333;
+            margin: 50px auto;
+            overflow: hidden;
+            /* overflow: hidden
+            => 영역 벗어나는 요소 숨김처리 */
+        }
+
+        section figure {
+            width: 100%;
+            height: 100%;
+        }
+
+        section figure img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        section div {
+            position: absolute;
+            left: 0;
+            bottom: -100%;
+            background: rgba(240, 248, 255, 0.329);
+            padding: 20px 40px;
+            /* 20px (상하좌우) */
+            /* 20px(상하) 40px(좌우)*/
+            /* 20px(상) 40px(좌우) 60px(하)*/
+            /* 20px(상) 30px(우) 40px(하) 50px(좌)*/
+            transition: 0.5s;
+            /* 시간속도조절 : 0.5초 */
+
+        }
+
+        section:hover div {
+            bottom: 0;
+        }
+
+        section div h4 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <figure>
+            <img src="img/음식1.jpg" alt="음식이미지" />
+        </figure>
+        <div>
+            <h4>음식제목</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae odit dolor eum reprehenderit id
+                facilis, architecto quas laborum labore vitae provident adipisci? Officiis odio doloremque iure id
+                explicabo tenetur sunt?</p>
+        </div>
+    </section>
+</body>
+
+</html>
