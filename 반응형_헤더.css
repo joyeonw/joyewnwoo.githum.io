@@ -171,3 +171,32 @@ header div .pc_gnb>ul>li:hover .sub_menu {
 
 
 /* 1024px */
+
+/* 뷰포트 767px 이하일 때 부터 스타일 */
+@media screen and (max-width:767px) {
+    header {
+        width: calc(100% - 20px);
+        top: 10px;
+    }
+
+    .main_visual div {
+        width: 95%;
+    }
+
+    .main_visual div h2 {
+        font-size: 30px;
+    }
+
+
+}
+
+/* 767px */
+
+
+/*
+1024 : 태블릿
+767 : 작은 태블릿, 모바일 가로버전
+640 : 큰 모바일
+460 / 414/ 360 => 모바일
+최소 320까지 맞추기
+*/
